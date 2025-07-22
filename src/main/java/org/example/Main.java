@@ -29,6 +29,8 @@ public class Main {
         Select yearm1 = new Select(year);
         yearm1.selectByVisibleText("1995");
 
+        driver.wait(3000);
+
 
         WebElement maleRadio = driver.findElement(By.xpath("//input[@type='radio' and @name='sex' and @value='2']"));
         maleRadio.click();
@@ -38,7 +40,7 @@ public class Main {
 
         //add relavant test data to the email and password fields
 
-        driver.wait(30000);
+        driver.wait(3000);
 
 
         driver.quit();
